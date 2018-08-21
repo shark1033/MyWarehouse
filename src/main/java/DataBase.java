@@ -10,13 +10,14 @@ public class DataBase {
 
 
     public  DataBase(){
-        System.out.printf("Object db is created");
+        System.out.println("Object db is created");
     }
 
     public static void connect() throws ClassNotFoundException, SQLException {
         Class.forName("org.sqlite.JDBC");
         connection=DriverManager.getConnection("jdbc:sqlite:main.db");
         statement=connection.createStatement();
+        System.out.println("Connected!");
 
     }
 
