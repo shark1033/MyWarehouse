@@ -6,7 +6,7 @@ public class Main {
 
         DataBase dataBase=new DataBase();
         DataBase.connect();
-       // dataBase.getMakers();
+       dataBase.getMakers();
     }
 
 

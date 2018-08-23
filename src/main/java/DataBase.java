@@ -22,11 +22,8 @@ public class DataBase {
         } catch (ClassNotFoundException e) {
             System.out.println("Error with path");
             e.printStackTrace();
-        }finally {
-            System.out.println("Disconnected!");
-            disconnect();
         }
-       // System.out.println("Connected!");
+        System.out.println("Connected!");
 
     }
 
